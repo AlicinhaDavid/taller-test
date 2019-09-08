@@ -114,10 +114,10 @@ const ChatRoom = ({ url, url: { query: { channel = 'general' } } }) => (
                         <StyledRoomHeader pad={ { vertical: 'small', horizontal: 'medium' } } justify='between'>
                           <Title>
                             { '#' + channel }
-                          </Title>
+                            </Title>
 
-                          <Button icon={ <RefreshIcon /> } onClick={ () => refetch() } />
-                        </StyledRoomHeader>
+                            <Button icon={ <RefreshIcon /> } onClick={ () => refetch() } />
+                          </StyledRoomHeader>
 
                         <Box pad='medium' flex='grow'>
                           { loading ? 'Loading...' : (
